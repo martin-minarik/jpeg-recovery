@@ -41,4 +41,7 @@ def main(filepath: str):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if len(sys.argv) < 2:
+        print("Usage: python main.py <file_path>")
+    else:
+        main(sys.argv[1])
